@@ -1,1 +1,3 @@
 # onepieceCardCalc
+
+# VScodeから更新
