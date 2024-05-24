@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+td, th {
+    padding: 10px;
+}
+
+
+
+/* 元のスタイルに戻す */
+input[type="number"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(50% - 2px);
+    max-width: 5em;
+    margin-bottom: 10px; /* 下のマージンを追加 */
+}
+
+label {
+    display: block; /* ラベルをブロック要素に変更 */
+    margin-bottom: 5px; /* ラベル間のマージンを追加 */
+}
+
+
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p#result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#combinationsContainer,
+#lifeCombinationsContainer {
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-height: 300px;
+    overflow-y: auto;
+}

@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Multiplication Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>カードゲーム用攻撃計算サイト</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <table>
-            <tbody id="gridContainer">
-                <!-- JavaScript でテキストボックスを追加するための空の tbody 要素 -->
-            </tbody>
-        </table>
-        <button id="calculateButton">Calculate</button>
-        <p id="result"></p>
+        <label for="handSize">相手の手札の枚数:</label>
+        <input type="number" id="handSize" min="1" value="3">
+        <label for="lifeSize">相手のライフの枚数:</label>
+        <input type="number" id="lifeSize" min="1" value="3">
+        <label for="powerSize">相手のパワー:</label>
+        <input type="number" id="powerSize" min="1" value="3">
+        <label for="blockerSize">相手のブロッカーの数:</label>
+        <input type="number" id="blockerSize" min="0" value="0">
+        <label for="donSize">自分が使えるドンの数:</label>
+        <input type="number" id="donSize" min="0" value="0">
+        <table id="gridContainer"></table>
+        <button id="calculateButton">計算</button>
+        <p id="result">合計: 0</p>
+        <div id="combinationsContainer">
+            <h3>相手の手札の組み合わせ:</h3>
+            <pre id="combinations"></pre>
+        </div>
+        <div id="lifeCombinationsContainer">
+            <h3>相手のライフの組み合わせ:</h3>
+            <pre id="lifeCombinations"></pre>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
